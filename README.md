@@ -1,2 +1,2 @@
-# mobile-menu
-mobile menu component with React library
+Mobile Menu
+Simple mobile hamburger menu component coded with React library
