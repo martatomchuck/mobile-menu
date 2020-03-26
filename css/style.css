@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext'");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333030;
+}
+
+.mobile {
+    width: 360px;
+    height: 640px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.mobile-menu {
+    width: 100%;
+    background: #fbbb21;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.mobile-menu .open-menu {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    color: transparent;
+}
+
+.mobile-menu nav {
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-menu nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu nav a {
+    display: inline-block;
+    color: #524f4f;
+    padding: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.mobile-menu nav .close-menu {
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #fbbb21;
+    border: 2px solid #fbbb21;
+    padding: 8px 22px;
+    border-radius: 8px;
+}
+
+.mobile-menu nav.hide {
+    display: none;
+}
